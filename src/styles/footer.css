@@ -1,0 +1,50 @@
+footer {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: absolute; /* Change to absolute for fixed footer positioning */
+  bottom: auto;
+  left: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure Footer is at the Bottom of the Page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Allows the main content to expand and push the footer down */
+}
+
+/* Footer Text */
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+      padding: 15px 5px;
+  }
+
+  footer p {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+      padding: 10px 5px;
+  }
+
+  footer p {
+      font-size: 10px;
+  }
+}

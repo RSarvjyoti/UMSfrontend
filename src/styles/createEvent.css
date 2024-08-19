@@ -1,0 +1,82 @@
+.create-event-container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+  }
+  
+  /* Heading */
+  .create-event-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form Styling */
+  .create-event-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input Fields */
+  .create-event-form input[type="text"],
+  .create-event-form textarea,
+  .create-event-form input[type="date"] {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+  
+  /* Textarea */
+  .create-event-form textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    min-height: 100px;
+  }
+  
+  /* Submit Button */
+  .create-event-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .create-event-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .create-event-container {
+      padding: 15px;
+    }
+  
+    .create-event-form input[type="text"],
+    .create-event-form textarea,
+    .create-event-form input[type="date"],
+    .create-event-form button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .create-event-form input[type="text"],
+    .create-event-form textarea,
+    .create-event-form input[type="date"],
+    .create-event-form button {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
